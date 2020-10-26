@@ -1,0 +1,33 @@
+object list:
+- students
+- teachers
+- classes
+- matieres
+- corses
+- groupe
+
+* students: dict(matricule:student =dict())
+	- matricule: str
+	- nom:str
+	- prenom:str
+	- classe:str
+	- groupe:int
+	- matieres:list(matiereID:str)
+	- pic:image (facultatif)
+
+* teachers: dict(matricule:teacher =dict())
+	- matricule: str
+	- nom:str
+	- prenom:str
+	- classe(s):list(str)
+	- matieres:list(matiereID:str)
+	- pic:image (facultatif)
+
+* classes: dict(students:list(matricules),
+	- classID:str
+	- students:list(matricule:str)
+	- teachers:list(matricule:str)
+	- matieres:list(matiereID:str)
+
+* matieres: 
+* corses:
